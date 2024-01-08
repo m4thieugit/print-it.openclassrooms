@@ -39,7 +39,7 @@ class Carousel {
 	}
 
 	/**
-	 * Fonction permettant la mise en route du carousel
+	 * Méthode permettant la mise en route du carousel
 	 */
 	setup() {
 		try {
@@ -51,7 +51,7 @@ class Carousel {
 	}
 
 	/**
-	 * Fonction permettant l'affichage des dots
+	 * Méthode permettant l'affichage des dots
 	 */
 	displayDots() {
 		for (let i = 0; i < this.slides.length; i++) {
@@ -69,7 +69,7 @@ class Carousel {
 	}
 
 	/**
-	 * Fonction permettant l'affichage des fleches
+	 * Méthode permettant l'affichage des fleches
 	 */
 	displayArrows() {
 		// Création de la flèche gauche
@@ -100,7 +100,7 @@ class Carousel {
 	}
 
 	/**
-	 * Fonction permettant l'affichage de la slide actuelle
+	 * Méthode permettant l'affichage de la slide actuelle
 	 */
 	displayCurrentSlide() {
 		// Si position actuelle est supérieur au nombre de slide, on reset la position
@@ -131,7 +131,7 @@ class Carousel {
 	}
 
 	/**
-	 * Fonction permettant l'affichage automatique des slides
+	 * Méthode permettant l'affichage automatique des slides
 	 */
 	startInterval() {
 		setInterval(() => {
