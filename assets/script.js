@@ -28,7 +28,7 @@ class Carousel {
 	 */
 	constructor(slides, speed = 5000) {
 		this.slides = slides; // Tableau contenant toutes les slides
-		this.dotsContainer = document.querySelector('.dots'); // La div qui contient tous les dots
+		this.dots_container = document.querySelector('.dots'); // La div qui contient tous les dots
 		this.banner_container = document.querySelector('#banner'); // La div de la bannière
 		this.banner_img = document.querySelector('.banner-img'); // L'image de la bannière
 		this.banner_img.style.transition = 'opacity 0.3s ease-in-out'; // Ajout d'une transition pour un effet fade en reduisant l'opacité de l'image
@@ -64,7 +64,7 @@ class Carousel {
 				this.current_slide = i;
 				this.displayCurrentSlide(); // Mise à jour de la slide
 			});
-			this.dotsContainer.appendChild(dot);
+			this.dots_container.appendChild(dot);
 		}
 	}
 
