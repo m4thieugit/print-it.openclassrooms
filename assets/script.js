@@ -112,7 +112,12 @@ class Carousel {
 			const slide = this.slides[i]; // Slide de la position actuelle dans le tableau
 			const dot = document.getElementsByClassName('dot')[i]; // Dot de la position actuelle dans le tableau
 
+			if (dot.classList.contains('dot_selected')) {
+				dot.classList.remove('dot_selected');
+			}
+
 			if (this.current_slide === i) {
+				dot.classList.add('dot_selected');
 				// Ajout d'un timeout pour un effet fade en reduisant l'opacité de l'image
 				this.banner_img.style.opacity = '0.7';
 				// On déclare un timeout pour que la durée de la proriété CSS soit respectée
@@ -122,10 +127,6 @@ class Carousel {
 					dot.classList.add('dot_selected');
 					this.banner_img.style.opacity = '1';
 				}, 300);
-			} else {
-				if (dot.classList.contains('dot_selected')) {
-					dot.classList.remove('dot_selected');
-				}
 			}
 		}
 	}
