@@ -124,7 +124,6 @@ class Carousel {
 				setTimeout(() => {
 					this.banner_img.src = './assets/images/slideshow/' + slide.image
 					this.banner_description.innerHTML = slide.tagLine;
-					dot.classList.add('dot_selected');
 					this.banner_img.style.opacity = '1';
 				}, 300);
 			}
